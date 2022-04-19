@@ -32,120 +32,6 @@ let package = Package(
     .package(url: "https://github.com/Banuba/VEExportSDK-iOS.git", .exact("1.22.0"))
   ],
   targets: [
-    .target(
-      name: "BanubaMusicEditorSDKPackage",
-      dependencies: [
-        .product(name: "BanubaMusicEditorSDK", package: "BanubaMusicEditorSDK-iOS"),
-      ]),
-    
-      .target(
-        name: "BanubaVideoEditorSDKPackage",
-        dependencies: [
-          .product(name: "BanubaVideoEditorSDK", package: "BanubaVideoEditorSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaOverlayEditorSDKPackage",
-        dependencies: [
-          .product(name: "BanubaOverlayEditorSDK", package: "BanubaOverlayEditorSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaSDKServicingPackage",
-        dependencies: [
-          .product(name: "BanubaSDKServicing", package: "BanubaSDKServicing-iOS"),
-        ]),
-    
-      .target(
-        name: "VideoEditorPackage",
-        dependencies: [
-          .product(name: "VideoEditor", package: "VideoEditor-iOS")
-        ]),
-    
-      .target(
-        name: "BanubaUtilitiesPackage",
-        dependencies: [
-          .product(name: "BanubaUtilities", package: "BanubaUtilities-iOS"),
-        ]),
-    
-      .target(
-        name: "VEEffectsSDKPackage",
-        dependencies: [
-          .product(name: "VEEffectsSDK", package: "VEEffectsSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaLicenseServicingSDKPackage",
-        dependencies: [
-          .product(name: "BanubaLicenseServicingSDK", package: "BanubaLicenseServicingSDK"),
-        ]),
-    
-      .target(
-        name: "BanubaTokenStorageSDKPackage",
-        dependencies: [
-          .product(name: "BanubaTokenStorageSDK", package: "BanubaTokenStorageSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "BNBLicenseUtilsPackage",
-        dependencies: [
-          .product(name: "BNBLicenseUtils", package: "BNBLicenseUtils-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaARCloudSDKPackage",
-        dependencies: [
-          .product(name: "BanubaARCloudSDK", package: "BanubaARCloudSDK-IOS"),
-        ]),
-    
-      .target(
-        name: "BanubaAudioBrowserSDKPackage",
-        dependencies: [
-          .product(name: "BanubaAudioBrowserSDK", package: "BanubaAudioBrowserSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaVideoEditorGallerySDKPackage",
-        dependencies: [
-          .product(name: "BanubaVideoEditorGallerySDK", package: "BanubaVideoEditorGallerySDK"),
-        ]),
-    
-      .target(
-        name: "BanubaEffectPlayerPackage",
-        dependencies: [
-          .product(name: "BanubaEffectPlayer", package: "BanubaEffectPlayer-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaSDKPackage",
-        dependencies: [
-          .product(name: "BanubaSdk", package: "BanubaSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaVideoEditorTrimSDKPackage",
-        dependencies: [
-          .product(name: "BanubaVideoEditorTrimSDK", package: "BanubaVideoEditorTrimSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaSDKSimplePackage",
-        dependencies: [
-          .product(name: "BanubaSdkSimple", package: "BanubaSDKSimple-IOS"),
-        ]),
-    
-      .target(
-        name: "VEPlaybackSDKPackage",
-        dependencies: [
-          .product(name: "VEPlaybackSDK", package: "VEPlaybackSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "VEExportSDKPackage",
-        dependencies: [
-          .product(name: "VEExportSDK", package: "VEExportSDK-iOS"),
-        ]),
-    
     .executableTarget(
       name: "helloworld",
       dependencies: [
@@ -166,6 +52,8 @@ let package = Package(
         .product(name: "BanubaSdkSimple", package: "BanubaSDKSimple-IOS"),
         .product(name: "VEPlaybackSDK", package: "VEPlaybackSDK-iOS"),
         .product(name: "VEEffectsSDK", package: "VEEffectsSDK-iOS"),
+        .product(name: "VEExportSDK", package: "VEExportSDK-iOS"),
+        .product(name: "BanubaSdk", package: "BanubaSDK-iOS"),
       ]
     ),
     .testTarget(
