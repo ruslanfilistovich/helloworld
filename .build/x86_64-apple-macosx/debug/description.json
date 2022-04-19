@@ -1,0 +1,144 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworldPackageTests.xctest/Contents/MacOS/helloworldPackageTests",
+      "productName" : "helloworldPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftCommands" : {
+    "C.helloworld-debug.module" : {
+      "executable" : "/Applications/Xcode(13.2.1).app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "importPath" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ruslanfilistovich/Desktop/helloworld/Sources/helloworld/main.swift"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "helloworld",
+      "moduleOutputPath" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.swiftmodule",
+      "objects" : [
+        "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx10.10",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/index/store",
+        "-sdk",
+        "/Applications/Xcode(13.2.1).app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk",
+        "-F",
+        "/Applications/Xcode(13.2.1).app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode(13.2.1).app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode(13.2.1).app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "helloworld_main",
+        "-color-diagnostics"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/ruslanfilistovich/Desktop/helloworld/Sources/helloworld/main.swift"
+      ],
+      "tempsPath" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.helloworldTests-debug.module" : {
+      "executable" : "/Applications/Xcode(13.2.1).app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "importPath" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ruslanfilistovich/Desktop/helloworld/Tests/helloworldTests/helloworldTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "helloworldTests",
+      "moduleOutputPath" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworldTests.swiftmodule",
+      "objects" : [
+        "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworldTests.build/helloworldTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx11.0",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/index/store",
+        "-sdk",
+        "/Applications/Xcode(13.2.1).app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk",
+        "-F",
+        "/Applications/Xcode(13.2.1).app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode(13.2.1).app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode(13.2.1).app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworldTests.build/helloworldTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworldTests.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/ruslanfilistovich/Desktop/helloworld/Tests/helloworldTests/helloworldTests.swift"
+      ],
+      "tempsPath" : "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworldTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

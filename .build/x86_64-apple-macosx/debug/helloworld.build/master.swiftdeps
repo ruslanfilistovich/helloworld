@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
+options: "61d1dff3e44ac44628af1dcf78fef820c64d1f68a86d6df29708990af5353dd9"
+build_start_time: [1649934731, 320176124]
+build_end_time: [1649934733, 43406009]
+inputs:
+  "/Users/ruslanfilistovich/Desktop/helloworld/Sources/helloworld/main.swift": [1649934572, 993300437]

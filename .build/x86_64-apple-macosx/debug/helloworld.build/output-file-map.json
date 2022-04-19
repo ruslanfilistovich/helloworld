@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.build/master.swiftdeps"
+  },
+  "/Users/ruslanfilistovich/Desktop/helloworld/Sources/helloworld/main.swift": {
+    "dependencies": "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.build/main.d",
+    "object": "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.build/main.swift.o",
+    "swiftmodule": "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/ruslanfilistovich/Desktop/helloworld/.build/x86_64-apple-macosx/debug/helloworld.build/main.swiftdeps"
+  }
+}
