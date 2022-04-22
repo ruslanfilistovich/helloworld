@@ -4,10 +4,10 @@
 import PackageDescription
 
 let package = Package(
-  name: "helloworld",
+  name: "BanubaVideoEditor",
   platforms: [.iOS(.v11)],
   products: [
-    .executable(name: "helloworld", targets: ["helloworld"]),
+    .library(name: "BanubaVideoEditor", targets: ["helloworld"]),
   ],
   
   dependencies: [
