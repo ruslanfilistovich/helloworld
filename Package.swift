@@ -7,7 +7,27 @@ let package = Package(
   name: "helloworld1",
   platforms: [.iOS(.v11)],
   products: [
-    .library(name: "helloworld1", targets: ["helloworld"]),
+    .library(name: "helloworld1", targets: [
+      "BanubaMusicEditorSDKPackage",
+      "BanubaVideoEditorSDKPackage",
+      "BanubaOverlayEditorSDKPackage",
+      "BanubaSDKServicingPackage",
+      "VideoEditorPackage",
+      "BanubaUtilitiesPackage",
+      "BanubaLicenseServicingSDKPackage",
+      "BanubaTokenStorageSDKPackage",
+      "BNBLicenseUtilsPackage",
+      "BanubaARCloudSDKPackage",
+      "BanubaAudioBrowserSDKPackage",
+      "BanubaVideoEditorGallerySDKPackage",
+      "BanubaEffectPlayerPackage",
+      "BanubaSDKPackage",
+      "BanubaVideoEditorTrimSDKPackage",
+      "BanubaSDKSimplePackage",
+      "VEPlaybackSDKPackage",
+      "VEEffectsSDKPackage",
+      "VEExportSDKPackage"
+    ]),
   ],
   
   dependencies: [
@@ -32,32 +52,122 @@ let package = Package(
     .package(url: "https://github.com/Banuba/VEExportSDK-iOS.git", .exact("1.22.0"))
   ],
   targets: [
-    .executableTarget(
-      name: "helloworld",
+    .target(
+      name: "BanubaMusicEditorSDKPackage",
       dependencies: [
-//        .product(name: "BanubaMusicEditorSDK", package: "BanubaMusicEditorSDK-iOS"),
-//        .product(name: "BanubaVideoEditorSDK", package: "BanubaVideoEditorSDK-iOS"),
-//        .product(name: "BanubaOverlayEditorSDK", package: "BanubaOverlayEditorSDK-iOS"),
-//        .product(name: "BanubaSDKServicing", package: "BanubaSDKServicing-iOS"),
-//        .product(name: "VideoEditor", package: "VideoEditor-iOS"),
-//        .product(name: "BanubaUtilities", package: "BanubaUtilities-iOS"),
-//        .product(name: "BanubaLicenseServicingSDK", package: "BanubaLicenseServicingSDK"),
-//        .product(name: "BanubaTokenStorageSDK", package: "BanubaTokenStorageSDK-iOS"),
-//        .product(name: "BNBLicenseUtils", package: "BNBLicenseUtils-iOS"),
-//        .product(name: "BanubaARCloudSDK", package: "BanubaARCloudSDK-IOS"),
-//        .product(name: "BanubaAudioBrowserSDK", package: "BanubaAudioBrowserSDK-iOS"),
-//        .product(name: "BanubaVideoEditorGallerySDK", package: "BanubaVideoEditorGallerySDK"),
-//        .product(name: "BanubaEffectPlayer", package: "BanubaEffectPlayer-iOS"),
-//        .product(name: "BanubaVideoEditorTrimSDK", package: "BanubaVideoEditorTrimSDK-iOS"),
-//        .product(name: "BanubaSdkSimple", package: "BanubaSDKSimple-IOS"),
-//        .product(name: "VEPlaybackSDK", package: "VEPlaybackSDK-iOS"),
-//        .product(name: "VEEffectsSDK", package: "VEEffectsSDK-iOS"),
-//        .product(name: "VEExportSDK", package: "VEExportSDK-iOS"),
-//        .product(name: "BanubaSdk", package: "BanubaSDK-iOS"),
-      ]
-    ),
+        .product(name: "BanubaMusicEditorSDK", package: "BanubaMusicEditorSDK-iOS"),
+      ]),
+    
+      .target(
+        name: "BanubaVideoEditorSDKPackage",
+        dependencies: [
+          .product(name: "BanubaVideoEditorSDK", package: "BanubaVideoEditorSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaOverlayEditorSDKPackage",
+        dependencies: [
+          .product(name: "BanubaOverlayEditorSDK", package: "BanubaOverlayEditorSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaSDKServicingPackage",
+        dependencies: [
+          .product(name: "BanubaSDKServicing", package: "BanubaSDKServicing-iOS"),
+        ]),
+    
+      .target(
+        name: "VideoEditorPackage",
+        dependencies: [
+          .product(name: "VideoEditor", package: "VideoEditor-iOS")
+        ]),
+    
+      .target(
+        name: "BanubaUtilitiesPackage",
+        dependencies: [
+          .product(name: "BanubaUtilities", package: "BanubaUtilities-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaLicenseServicingSDKPackage",
+        dependencies: [
+          .product(name: "BanubaLicenseServicingSDK", package: "BanubaLicenseServicingSDK"),
+        ]),
+    
+      .target(
+        name: "BanubaTokenStorageSDKPackage",
+        dependencies: [
+          .product(name: "BanubaTokenStorageSDK", package: "BanubaTokenStorageSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BNBLicenseUtilsPackage",
+        dependencies: [
+          .product(name: "BNBLicenseUtils", package: "BNBLicenseUtils-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaARCloudSDKPackage",
+        dependencies: [
+          .product(name: "BanubaARCloudSDK", package: "BanubaARCloudSDK-IOS"),
+        ]),
+    
+      .target(
+        name: "BanubaAudioBrowserSDKPackage",
+        dependencies: [
+          .product(name: "BanubaAudioBrowserSDK", package: "BanubaAudioBrowserSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaVideoEditorGallerySDKPackage",
+        dependencies: [
+          .product(name: "BanubaVideoEditorGallerySDK", package: "BanubaVideoEditorGallerySDK"),
+        ]),
+    
+      .target(
+        name: "BanubaEffectPlayerPackage",
+        dependencies: [
+          .product(name: "BanubaEffectPlayer", package: "BanubaEffectPlayer-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaSDKPackage",
+        dependencies: [
+          .product(name: "BanubaSdk", package: "BanubaSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaVideoEditorTrimSDKPackage",
+        dependencies: [
+          .product(name: "BanubaVideoEditorTrimSDK", package: "BanubaVideoEditorTrimSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaSDKSimplePackage",
+        dependencies: [
+          .product(name: "BanubaSdkSimple", package: "BanubaSDKSimple-IOS"),
+        ]),
+    
+      .target(
+        name: "VEPlaybackSDKPackage",
+        dependencies: [
+          .product(name: "VEPlaybackSDK", package: "VEPlaybackSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "VEEffectsSDKPackage",
+        dependencies: [
+          .product(name: "VEEffectsSDK", package: "VEEffectsSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "VEExportSDKPackage",
+        dependencies: [
+          .product(name: "VEExportSDK", package: "VEExportSDK-iOS"),
+        ]),
+    
     .testTarget(
       name: "helloworldTests",
-      dependencies: ["helloworld"]),
+      dependencies: ["VEEffectsSDKPackage"]),
   ]
 )
