@@ -7,7 +7,7 @@ let package = Package(
   name: "helloworld",
   platforms: [.iOS(.v11)],
   products: [
-    .library(name: "helloworld", targets: ["helloworld"]),
+    .executable(name: "helloworld", targets: ["helloworld"]),
   ],
   
   dependencies: [
