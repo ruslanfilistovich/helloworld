@@ -4,10 +4,10 @@
 import PackageDescription
 
 let package = Package(
-  name: "helloworld",
+  name: "helloworld1",
   platforms: [.iOS(.v11)],
   products: [
-    .library(name: "helloworld", targets: ["helloworld"]),
+    .library(name: "helloworld1", targets: ["helloworld"]),
   ],
   
   dependencies: [
